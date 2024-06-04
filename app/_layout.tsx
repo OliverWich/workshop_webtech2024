@@ -1,7 +1,6 @@
 import "react-native-reanimated";
 import Constants from 'expo-constants';
 import { Text, View, StyleSheet } from 'react-native';
-import "react-native-reanimated";
 
 import { WithSkiaWeb } from '@shopify/react-native-skia/lib/module/web';
 
@@ -9,7 +8,7 @@ export default function RootLayout() {
   return (
     <View style={styles.container}>
       <WithSkiaWeb
-        getComponent={() => import('../components/breathe/Breathe')}
+        getComponent={() => import('../components/Task3Regen/Task1Regen')}
         fallback={<Text style={{ textAlign: 'center' }}>Loading Skia...</Text>}
       />
     </View>
